@@ -4,12 +4,14 @@ for (let i = 0; i < btn.length; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     const key = this.innerHTML;
     makeSound(key);
+    buttonAnimation(key);
   });
 }
 
 // Keyboard Press
 document.addEventListener('keydown', (event) => {
   makeSound(event.key);
+  buttonAnimation(event.key)
 })
 
 // Logic  
@@ -46,4 +48,12 @@ function makeSound(key) {
     default:
       // alert("What the fuck do I do now?");
   }
+}
+
+function buttonAnimation(key) {
+  const activeButton = document.querySelector('.' + key);
+  activeButton.classList.add('pressed');
+  setTimeout(() => {
+    activeButton.classList.remove('pressed');
+  }, 100);
 }

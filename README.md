@@ -4,4 +4,4 @@
 ### Oh You Can't Think Of Any Jokes?
 Fear not I got you covered [here](https://egnalud-jarivar.github.io/Joke/)
 
-### Checkout The [Joke](https://github.com/egnaluD-jarivaR/Joke) Page
+### Checkout The [Joke](https://github.com/egnaluD-jarivaR/Joke) Repo
